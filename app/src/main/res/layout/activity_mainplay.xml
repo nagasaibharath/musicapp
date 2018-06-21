@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainplayActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        app:srcCompat="@drawable/music" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:rotation="270"
+        android:layerType="hardware"
+        android:translationX="160dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="changeimage1"
+        app:srcCompat="@drawable/pausebutton" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/imageView5"
+        android:onClick="increment"
+        app:srcCompat="@drawable/nextbutton" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="8dp"
+        android:onClick="decrement"
+        android:layout_toLeftOf="@+id/imageView5"
+        app:srcCompat="@drawable/prevbutton" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="188dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
